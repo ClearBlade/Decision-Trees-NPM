@@ -1,0 +1,9 @@
+{
+    "auth": true,
+    "description": "",
+    "messaging_url": "staging.clearblade.com:1883",
+    "name": "CARTDecisionTree",
+    "platform_url": "https://staging.clearblade.com",
+    "system_key": "b892ded80bb096d2f19be3cdb38401",
+    "system_secret": "B892DED80BD2B0D0BDAB86CFBC31"
+}
