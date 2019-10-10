@@ -36,7 +36,7 @@
   "gateways": [],
   "name": "Decision-Trees-NPM",
   "private": false,
-  "image_url": "",
+  "image_url": "https://i.imgur.com/6sD5beS.png",
   "dependencies": {
     "some_clearblade_lib": "latest",
     "http": "latest"
