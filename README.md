@@ -29,7 +29,7 @@ https://github.com/ClearBlade/decision-trees
 3. Click **Create**
 4. You can now access this system in the platform.
 
-## Steps for Transpilation to ES5
+## Transpilation to ES5
 
 Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1) for transpilation of any NPM package to ES5.
 
