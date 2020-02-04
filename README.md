@@ -1,4 +1,4 @@
-# Decision-Trees-NPM
+# Decision-Trees
 
 ## Contents
 
