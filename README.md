@@ -31,11 +31,8 @@ https://github.com/ClearBlade/decision-trees
 
 ## Steps for Transpilation to ES5
 
-Follow these steps for transpilation - 
-
-```
-https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1
-```
+Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1
+) for transpilation - 
 
 ## Usage
 
