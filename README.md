@@ -39,14 +39,17 @@ https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README
 
 ## Usage
 
-- This IPM package consists for five Machine Learning Libraries which allow you to train and test models on the ClearBlade Platform. These Libraries are NPM packages that have been transpiled to work on the ClearBlade Platform. The libraries that have been transpiled are - 
-  - brain-js
-  - synaptic
-  - ml-regression
-  - ml-naivebayes
-  - ml-cart
+- This IPM package consists of a Decision Tree Library that can be imported on the ClearBlade Platform in order to train and test machine learning models on the platform. This library can be used to perform classification and regression.
 
-- These Libraries can be used to design Neural Networks Model and Bayesian Models for Classification, and Regression Models for Prediction. 
+- As a classifier it can be used as follows:
+
+```
+var model = getTree();
+var classifier = new model.DecisionTreeClassifier({ gainFunction: "gini", maxDepth: 10, minNumSamples: 3});
+classifier.train(dataset, predictions);
+  
+var output = classifier.predict(test);
+```
 
 - The implementation of these libraries is done in the [smoke test](https://github.com/ClearBlade/decision-trees/blob/master/code/services/DecisionTreeSmokeTest/DecisionTreeSmokeTest.js) and you can refer to the **Official Documentation** of that library to explore more options that you can use.  
 
