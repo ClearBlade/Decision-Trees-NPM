@@ -41,14 +41,35 @@ https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README
 
 - This IPM package consists of a Decision Tree Library that can be imported on the ClearBlade Platform in order to train and test machine learning models on the platform. This library can be used to perform classification and regression.
 
-- As a classifier it can be used as follows:
+- After importing this IPM on the clearblade platform, the Decision Tree library can be implemented as a classifier. This is shown below:
 
 ``` javascript
-var model = getTree();
-var classifier = new model.DecisionTreeClassifier({ gainFunction: "gini", maxDepth: 10, minNumSamples: 3});
-classifier.train(dataset, predictions);
+  var model = getTree();
   
-var output = classifier.predict(test);
+  var classifier = new model.DecisionTreeClassifier({ 
+    gainFunction: "gini", 
+    maxDepth: 10, 
+    minNumSamples: 3});
+  
+  classifier.train(training_dataset, training_labels);
+  
+  var output = classifier.predict(test_data);
+```
+
+- This library can also be used for performing regression. This is shown below:
+
+``` javascript
+  var model = getTree();
+  
+  var classifier = new model.DecisionTreeRegression({
+    gainFunction: "regression",
+    minNumSamples: 3,
+    maxDepth: 10
+  });
+  
+  classifier.train(training_data, training_labels);
+  
+  var output = classifier.predict(test);  
 ```
 
 - The implementation of these libraries is done in the [smoke test](https://github.com/ClearBlade/decision-trees/blob/master/code/services/DecisionTreeSmokeTest/DecisionTreeSmokeTest.js) and you can refer to the **Official Documentation** of that library to explore more options that you can use.  
