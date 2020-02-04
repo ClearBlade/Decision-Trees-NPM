@@ -43,7 +43,7 @@ https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README
 
 - As a classifier it can be used as follows:
 
-```
+``` javascript
 var model = getTree();
 var classifier = new model.DecisionTreeClassifier({ gainFunction: "gini", maxDepth: 10, minNumSamples: 3});
 classifier.train(dataset, predictions);
