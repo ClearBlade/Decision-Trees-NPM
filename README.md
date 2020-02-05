@@ -81,18 +81,22 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
   var output = classifier.predict(test_data);
 ```
 
-- This library can also be used for performing regression. This is shown below:
+- This library can also be used for performing regression tasks as well. The code snippet is shown below:
 ``` javascript
   var model = getTree();
   
-  var classifier = new model.DecisionTreeRegression({
+  var reg = new model.DecisionTreeRegression({
     gainFunction: "regression",
     minNumSamples: 3,
     maxDepth: 10
   });
   
-  classifier.train(training_data, training_labels);
+  var feature_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  var feature_2 = [73.4, 76.2, 62.3, 80.2, 100, 94, 88.3, 70, 78, 83, 83, 91, 74, 68, 84, 81, 90, 94, 103, 99];
   
+  reg.train(feature_1, feature_2);
+  
+  var test_data = [[24]]
   var output = classifier.predict(test_data);  
 ```
 
