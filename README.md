@@ -45,14 +45,16 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
 ```
 
 - Once we define the **model** varibale, the Decision Tree library can be implemented as a classifier which is shown below. This library currently supports **gini** as the gain function which determines the best split at a given point of time. The maxDepth parameter determines the maximum depth of the tree.
+
 ``` javascript
   var classifier = new model.DecisionTreeClassifier({ 
     gainFunction: "gini", 
     maxDepth: 10, 
-    minNumSamples: 3});
+    minNumSamples: 3}); 
  ```
  
- - After configuring the classifier, the training data can be set up as shown below. This data includes Readings recorded from 3 sensors (Power, Temperature and Accelerometer) inside a machine. The training labels are also defined which give information about whether a maintenance was required for a given set of sensor values. ( 0 - Maintenance Not Required; 1 - Maintenance Required )
+- After configuring the classifier, the training data can be set up as shown below. This data includes Readings recorded from 3 sensors (Power, Temperature and Accelerometer) inside a machine. The training labels are also defined which give information about whether a maintenance was required for a given set of sensor values. ( 0 - Maintenance Not Required; 1 - Maintenance Required )
+
 ``` javascript
   var training_data = [
       [1350, 73.4, 0.0683], 
