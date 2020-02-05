@@ -31,17 +31,22 @@ https://github.com/ClearBlade/decision-trees
 
 ## Transpilation to ES5
 
-Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1) for transpilation of any NPM package to ES5.
+Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1) for transpilation of any NPM package to ES5 so that the NPM package can be imported as a library in the clearblade code engine.
 
 ## Usage
 
 - This IPM package consists of a Decision Tree Library that can be imported on the ClearBlade Platform in order to train and test machine learning models on the platform. This library can be used to perform classification and regression.
 
+- The API documentation for this library can be found [here](http://mljs.github.io/decision-tree-cart/)
+
 - After importing this IPM on the clearblade platform, the Decision Tree library can be implemented as a classifier. This is shown below:
 
+- This code snippet loads the Decision Tree library and allows your code to access functionality of the library APIs via the **model** variable.
 ``` javascript
   var model = getTree();
-  
+```
+
+``` javascript
   var classifier = new model.DecisionTreeClassifier({ 
     gainFunction: "gini", 
     maxDepth: 10, 
@@ -67,8 +72,6 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
   
   var output = classifier.predict(test_data);  
 ```
-
-- The API documentation for this library can be found [here](http://mljs.github.io/decision-tree-cart/)
 
 - The implementation of this library is done in the [smoke test](https://github.com/ClearBlade/decision-trees/blob/master/code/services/DecisionTreeSmokeTest/DecisionTreeSmokeTest.js) and you can refer to the [**Official Documentation**](https://github.com/mljs/decision-tree-cart) of that library to explore more options that you can use.  
 
