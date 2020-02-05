@@ -35,7 +35,7 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
 
 ## Usage
 
-- This IPM package consists of a Decision Tree Library that can be imported on the ClearBlade Platform in order to train and test machine learning models on the platform. This library can be used to perform classification and regression.
+- This IPM package consists of a Decision Tree Library that can be imported in the ClearBlade Platform in order to train and test machine learning models on the platform. This library can be used to perform classification and regression.
 
 - The API documentation for this library can be found [here](http://mljs.github.io/decision-tree-cart/)
 
