@@ -1,6 +1,6 @@
 {
   "author": "Rajas Deshpande <rdeshpande@clearblade.com>",
-  "description": "Decision Trees NPM",
+  "description": "Decision Trees",
   "asset_types": [
     "System",
     "Code Libraries",
@@ -34,7 +34,7 @@
   ],
   "protocols": [],
   "gateways": [],
-  "name": "Decision-Trees-NPM",
+  "name": "Decision-Trees",
   "private": false,
   "image_url": "https://i.imgur.com/6sD5beS.png",
   "dependencies": {
