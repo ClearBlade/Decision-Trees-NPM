@@ -39,12 +39,12 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
 
 - The API documentation for this library can be found [here](http://mljs.github.io/decision-tree-cart/)
 
-- This code snippet loads the Decision Tree library and allows your code to access functionality of the library APIs via the **model** variable.
+- The following code snippet loads the Decision Tree library and allows your code to access functionality of the library APIs via the **model** variable.
 ``` javascript
   var model = getTree();
 ```
 
-- After importing this IPM on the clearblade platform, the Decision Tree library can be implemented as a classifier. This is shown below. This library currently supports **gini** as the gain function which determines the best split at a given point of time. The maxDepth parameter determines the maximum depth of the tree.
+- Once we define the **model** varibale, the Decision Tree library can be implemented as a classifier which is shown below. This library currently supports **gini** as the gain function which determines the best split at a given point of time. The maxDepth parameter determines the maximum depth of the tree.
 ``` javascript
   var classifier = new model.DecisionTreeClassifier({ 
     gainFunction: "gini", 
@@ -52,7 +52,7 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
     minNumSamples: 3});
  ```
  
- - After setting up the model, the training data can be set up as shown below. This data includes Readings recorded from 3 sensors (Power, Temperature and Accelerometer) inside a machine. The training labels are also defined which give information about whether a maintenance was required for a given set of sensor values. ( 0 - Maintenance Not Required; 1 - Maintenance Required )
+ - After configuring the classifier, the training data can be set up as shown below. This data includes Readings recorded from 3 sensors (Power, Temperature and Accelerometer) inside a machine. The training labels are also defined which give information about whether a maintenance was required for a given set of sensor values. ( 0 - Maintenance Not Required; 1 - Maintenance Required )
 ``` javascript
   var training_data = [
       [1350, 73.4, 0.0683], 
@@ -64,24 +64,24 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
       [1421, 75.4, 0.0695], 
       [1800, 95.1, 1.9], 
       [1520, 82.4, 0.4272], 
-      [1740, 95.0, 1.715]];
+      [1740, 95.0, 1.715]
+  ];
       
   var training_labels = [0, 0, 0, 1, 0, 1, 0, 1, 0, 1];
 ```
 
-- Using this training data and training labels, we train the classifier as follows-
+- Using the training data and training labels, train the classifier as follows-
  ``` javascript
   classifier.train(training_dataset, training_labels);
  ```
 
-- Once the classifer is trained, we can predict for a given set of sensor values, if a maintenance is required or not.
+- Once the classifer is trained, predict for a given set of sensor values, if a maintenance is required or not.
 ``` javascript
   var test_data = [[1780, 95.5, 1.812]];
   var output = classifier.predict(test_data);
 ```
 
 - This library can also be used for performing regression. This is shown below:
-
 ``` javascript
   var model = getTree();
   
