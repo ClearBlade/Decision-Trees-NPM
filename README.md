@@ -4,7 +4,7 @@
 
 ### [Overview](#overview-1)
 ### [System Installation](#system-installation)
-### [Steps for Transpilation to ES5](#transpilation-to-es5-1)
+### [Steps for Transpilation to ES5](#transpilation-to-es5)
 ### [Usage](#usage-1)
 ### [Assets](#assets-1)
 
