@@ -40,6 +40,7 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
 - The API documentation for this library can be found [here](http://mljs.github.io/decision-tree-cart/)
 
 - The following code snippet loads the Decision Tree library and allows your code to access functionality of the library APIs via the **model** variable.
+
 ``` javascript
   var model = getTree();
 ```
@@ -51,7 +52,7 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
     gainFunction: "gini", 
     maxDepth: 10, 
     minNumSamples: 3}); 
- ```
+```
  
 - After configuring the classifier, the training data can be set up as shown below. This data includes Readings recorded from 3 sensors (Power, Temperature and Accelerometer) inside a machine. The training labels are also defined which give information about whether a maintenance was required for a given set of sensor values. ( 0 - Maintenance Not Required; 1 - Maintenance Required )
 
@@ -73,9 +74,10 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
 ```
 
 - Using the training data and training labels, train the classifier as follows-
- ``` javascript
+
+``` javascript
   classifier.train(training_dataset, training_labels);
- ```
+```
 
 - Once the classifer is trained, predict for a given set of sensor values, if a maintenance is required or not.
 ``` javascript
