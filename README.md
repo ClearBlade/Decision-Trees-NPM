@@ -45,7 +45,7 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
   var model = getTree();
 ```
 
-- Once we define the **model** varibale, the Decision Tree library can be implemented as a classifier which is shown below. This library currently supports **gini** as the gain function which determines the best split at a given point of time. The maxDepth parameter determines the maximum depth of the tree.
+- Once we define the **model** variable, the Decision Tree library can be implemented as a classifier which is shown below. This library currently supports **gini** as the gain function which determines the best split at a given point of time. The maxDepth parameter determines the maximum depth of the tree.
 
 ``` javascript
   var classifier = new model.DecisionTreeClassifier({ 
