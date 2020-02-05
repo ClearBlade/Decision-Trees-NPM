@@ -72,7 +72,7 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
 
 - The implementation of this library is done in the [smoke test](https://github.com/ClearBlade/decision-trees/blob/master/code/services/DecisionTreeSmokeTest/DecisionTreeSmokeTest.js) and you can refer to the [**Official Documentation**](https://github.com/mljs/decision-tree-cart) of that library to explore more options that you can use.  
 
-## Assests
+## Assets
 
 ### Libraries 
 
