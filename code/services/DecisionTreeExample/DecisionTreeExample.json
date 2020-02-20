@@ -5,7 +5,7 @@
     "dependencies": "log,CARTDecisionTreeLibrary",
     "execution_timeout": 60,
     "logging_enabled": true,
-    "name": "DecisionTreeSmokeTest",
+    "name": "DecisionTreeExample",
     "params": [
         "{}"
     ],

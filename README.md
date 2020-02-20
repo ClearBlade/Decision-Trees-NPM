@@ -100,19 +100,19 @@ https://github.com/ClearBlade/decision-trees
   var output = classifier.predict(test_data);  
 ```
 
-- The implementation of this library is done in the [smoke test](https://github.com/ClearBlade/decision-trees/blob/master/code/services/DecisionTreeSmokeTest/DecisionTreeSmokeTest.js) and you can refer to the [**Official Documentation**](https://github.com/mljs/decision-tree-cart) of that library to explore more options that you can use.  
+- The implementation of this library is done in the [smoke test](https://github.com/ClearBlade/decision-trees/blob/master/code/services/DecisionTreeExample/DecisionTreeExample.js) and you can refer to the [**Official Documentation**](https://github.com/mljs/decision-tree-cart) of that library to explore more options that you can use.  
 
 ## Assets
 
 ### Libraries 
 
-| Library  | Description  | Official Documentation |   
-|---|---|---|
-| ``` CARTDecisionTreeLibrary ```  | A Library Implementing Classification and Regression Trees  | https://github.com/mljs/decision-tree-cart |
+| Library                         | Description                                                | Official Documentation                     |
+| ------------------------------- | ---------------------------------------------------------- | ------------------------------------------ |
+| ``` CARTDecisionTreeLibrary ``` | A Library Implementing Classification and Regression Trees | https://github.com/mljs/decision-tree-cart |
 
 ### Code Services
 
-``` DecisionTreeSmokeTest ``` : A code service to show working of Decision Tree Library.
+``` DecisionTreeExample ``` : A code service to show working of Decision Tree Library.
 
 ## Advanced
 
