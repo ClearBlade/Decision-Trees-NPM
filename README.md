@@ -4,9 +4,9 @@
 
 ### [Overview](#overview-1)
 ### [System Installation](#system-installation)
-### [Steps for Transpilation to ES5](#transpilation-to-es5)
 ### [Usage](#usage-1)
 ### [Assets](#assets-1)
+### [Advanced](#advanced-1)
 
 ## Overview
 
@@ -28,10 +28,6 @@ https://github.com/ClearBlade/decision-trees
 ```
 3. Click **Create**
 4. You can now access this system in the platform.
-
-## Transpilation to ES5
-
-Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1) for transpilation of any NPM package to ES5 so that the NPM package can be imported as a library in the clearblade code engine.
 
 ## Usage
 
@@ -117,3 +113,11 @@ Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Librari
 ### Code Services
 
 ``` DecisionTreeSmokeTest ``` : A code service to show working of Decision Tree Library.
+
+### Advanced
+
+#### Transpilation to ES5
+
+Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1) for transpilation of any NPM package to ES5 so that the NPM package can be imported as a library in the clearblade code engine.
+
+
