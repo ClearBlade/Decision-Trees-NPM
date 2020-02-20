@@ -114,9 +114,9 @@ https://github.com/ClearBlade/decision-trees
 
 ``` DecisionTreeSmokeTest ``` : A code service to show working of Decision Tree Library.
 
-### Advanced
+## Advanced
 
-#### Transpilation to ES5
+### Transpilation to ES5
 
 Follow these [steps](https://github.com/ClearBlade/Machine-Learning-Node-Libraries/blob/master/README.md#steps-for-transpilation-to-es5-1) for transpilation of any NPM package to ES5 so that the NPM package can be imported as a library in the clearblade code engine.
 
